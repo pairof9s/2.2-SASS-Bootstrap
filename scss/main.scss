@@ -1,0 +1,22 @@
+// Bootstrap Variables
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap";
+$brand-primary:  red;
+$grid-gutter-width:         20px !default;
+
+// Install Bootstrap
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+}
+
+.container {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #666;
+}
+
+nav{
+  ul {
+      list-style: none;
+  }
+}
