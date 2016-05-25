@@ -23,44 +23,41 @@ $red: lighten(red, 25);
 }
 
 nav {
+  margin-bottom: 20px;
+
   .nav-box {
     height: 50px;
     width: 240px;
-    margin-left: 5px;
+    margin: 0, auto;
     background-color: red;
   }
 
   ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
-  }
-
-  li:before {
-    content: " – ";
-    color: white;
-    padding: 0 5px;
-    font-size: 24px;
-    vertical-align: bottom;
   }
 
   a {
     display: block;
-    padding: 0 12px;
     color: white;
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+    position: relative;
   }
 
   a:hover {
     color: $brand-primary;
     text-decoration: none;
   }
-  
-  a:hover .nav-box {
-    background-color: $red;
+
+
+  &:before,
+  &:after {
+    content: '\2014';
+    color: white;
+    padding: 0 10px;
+    position: absolute;
   }
 }
 
