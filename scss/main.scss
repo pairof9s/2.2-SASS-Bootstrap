@@ -3,11 +3,18 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $brand-primary:  black;
 $grid-gutter-width:         20px !default;
 $blue: blue;
-$red: lighten(red, 25);
 
 
 // Install Bootstrap
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+h1 {
+
+}
+
+h2 {
+
+}
 
 .wrapper {
   max-width: 100%;
@@ -18,10 +25,22 @@ $red: lighten(red, 25);
   position: relative;
 }
 
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, .6);
+}
+
 .container {
-  font-family: 'Open Sans', sans-serif;
+  max-width: 1024px;
+  font-family: 'Hind', sans-serif;
   font-size: 18px;
-  color: #666;
+  color: white;
+  margin: 0 auto;
 }
 
 nav {
@@ -65,10 +84,12 @@ nav {
 
 .top-image {
   max-width: 100%;
+  height: 357px;
   background-image: url(../assets/top-image.png);
-  background-size: cover;
+  background-size: 130%;
+  background-position: 0 -135px;
   background-repeat: no-repeat;
-  border: 6px solid white;
+  border: 10px solid white;
   position: relative;
 
   &:before {
@@ -80,6 +101,23 @@ nav {
     left: 0;
     right: 0;
   }
+
+  &:after {
+    content: '';
+    z-index: 1;
+    background-image: url(../assets/grid.png);
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.logo {
+  padding-top: 60px;
+  padding-left: 10px;
 }
 
 .frame {
@@ -90,20 +128,31 @@ nav {
 }
 
 .topicbox {
-  color: white;
+  max-width: 334px;
+  max-height: 350px;
+  margin-top: 30px;
+  background-color: white;
   text-align: left;
+  float: left;
+  padding: 20px 20px 10px 20px;
 
-  &.title {
-    font-weight: 400;
+  & h2 {
+    font-weight: 300;
+    font-size: 1.4em;
+    color: #333;
   }
 
-  &.date {
-    font-weight: 400;
+  & #date {
+    font-weight: 300;
+    font-size: 1em;
+    color: #888;
   }
 
-  &.link {
-    text-decoration: none;
+  & p {
+    font-size: .8em;
     font-weight: 400;
+    line-height: 1.6em;
+    color: #333;
   }
 }
 
