@@ -21,8 +21,16 @@
           <!-- ** Social links ** -->
           <div class="row col-md-offset-6 col-md-6">
             <div class="subscribe">
+              <span class="subtext"><a href="#">subscribe:</a></span>
             </div>
-            <div class="seperator">
+            <div class="separator">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
             </div>
             <div class="socials">
               <ul>
@@ -50,7 +58,7 @@
           </div>
         </div> <!-- ** close Header Area ** -->
         <!-- ** 3 Content Blocks ** -->
-        <div class="row col-xs-12">
+        <section class="row col-xs-12">
           <div class="topicbox">
             <h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
             <p><span id='date'>October 10, 2013</span></p>
@@ -69,7 +77,7 @@
             <p>Since filming is in full swing for the Vans video Adventures with Chris has taken the opportunity to sit some of the team down to look behind the skating of some of the earlier parts. Today we sit down Ray Barbee, one of the smoothest guys to ever step on a skateboard and Chris' childhood idol...</p>
             <a href="#">[ read more ]</a>
           </div>
-        </div> <!-- ** close Content Blocks ** -->
+        </section> <!-- ** close Content Blocks ** -->
         <!-- ** Skaters Blocks ** -->
         <div>
           <div></div>
@@ -78,23 +86,25 @@
           <div></div>
         </div> <!-- ** close Skaters Blocks ** -->
         <!-- ** Skateboard Models area ** -->
-        <div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div> <!-- ** close Skateboard Models area ** -->
+        <section class="row col-md-12 sk8">
+          <div class="boards">
+            <ul>
+              <li><span id="boardimg"<img src="assets/sk8-1.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-2.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-3.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-4.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-5.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-6.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-7.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-8.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-9.png" alt="" /></span></li>
+              <li><span id="boardimg"><img src="assets/sk8-10.png" alt="" /></span></li>
+            </ul>
+          </div>
+        </section> <!-- ** close Skateboard Models area ** -->
         <!-- ** Contact area ** -->
-        <div class="row col-xs-12 contact">
-          <div>
+        <section class="row col-xs-12">
+          <div class="contact">
             <div class="info">
               <h2>Contact Us for More Information</h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -109,17 +119,34 @@
               </div>
             </div>
             <div class="form">
-              <form class="" action="index.html" method="post">
-                <ul>
-                  <li><input type="text" name="name" value="NAME"></li>
-                  <li><input type="text" name="email" value="EMAIL"></li>
-                  <li><input type="text" name="message" value="YOUR MESSAGE"></li>
-                  <li><input type="submit" value="submit"></li>
-                </ul>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="sr-only" for="inputName" class="col-sm-2 control-label"></label>
+                  <div class="col-sm-10">
+                    <input type="name" class="form-control" id="inputName" placeholder="NAME">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="inputEmail3" class="col-sm-2 control-label"></label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="EMAIL">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="sr-only"></label>
+                  <div class="col-sm-10">
+                    <textarea class="form-control" rows="3" placeholder="YOUR MESSAGE"></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-danger">SUBMIT</button>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
-        </div> <!-- ** close Contact area ** -->
+        </section> <!-- ** close Contact area ** -->
 
       </div> <!-- ** close Main Container ** -->
     </div> <!-- ** close background image Wrapper ** -->
