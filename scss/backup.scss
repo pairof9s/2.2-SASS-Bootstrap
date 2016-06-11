@@ -1,0 +1,361 @@
+// Bootstrap Variables customized for this project
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$grid-gutter-width:         20px !default;
+
+
+
+
+// Install Bootstrap
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+.wrapper {
+  max-width: 100%;
+  height: 100%;
+  background-image: url(../assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(10, 10, 10, .6);
+}
+
+.container {
+  max-width: 1044px;
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  color: white;
+  margin: 0 auto;
+}
+
+
+// Navigation & Social links header
+nav {
+  height: auto;
+  max-width: 100%;
+  margin: 0, auto;
+
+  .nav-box {
+    height: 40px;
+    max-width: 248px;
+    background-color:  rgb(179, 41, 46);
+    text-align: center;
+    position: relative;
+  }
+
+  ul {
+    list-style: none;
+    display: block;
+    float: left;
+  }
+
+  li {
+  }
+
+  a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+
+  & .nav:before,
+  & .nav:after {
+    content: '\2014';
+    color: white;
+    padding: 0 6px;
+    position: absolute;
+  }
+}
+
+.subscribe {
+  margin-top: 10px;
+  position: relative;
+
+    .subtext {
+      font-size: .8em;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: white;
+      float: left;
+    }
+
+    & a {
+      text-decoration: none;
+      color: white;
+    }
+
+    & a:hover {
+      color:  rgb(179, 41, 46);
+    }
+}
+
+.separator {
+  position: relative;
+
+  & li {
+    position: absolute;
+    float: left;
+    line-height: .5em;
+  }
+}
+
+.socials {
+  position: relative;
+
+  .socials ul {
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  #facebook {
+  }
+
+  #facebook a {
+    max-width: 60px;
+    max-height: 60px;
+    display: inline-block;
+    position: absolute;
+    float: left;
+    background-image: url(../assets/fb-off.jpg);
+  }
+
+  #facebook a:hover {
+    background-image: url(../assets/fb-on.jpg);
+  }
+
+  #rss {
+  }
+
+  #rss a {
+    max-width: 60px;
+    max-height: 60px;
+    display: inline-block;
+    position: absolute;
+    float: left;
+    background-image: url(../assets/rss-off.jpg);
+  }
+
+  #rss a:hover {
+      background-image: url(../assets/rss-on.jpg);
+  }
+
+  #twitter {
+  }
+
+  #twitter a {
+    max-width: 60px;
+    max-height: 60px;
+    display: inline-block;
+    position: absolute;
+    float: left;
+    background-image: url(../assets/twit-off.jpg);
+  }
+
+  #twitter a:hover {
+      background-image: url(../assets/twit-on.jpg);
+  }
+
+  #youtube {
+  }
+
+  #youtube a {
+    max-width: 60px;
+    max-height: 60px;
+    display: inline-block;
+    position: absolute;
+    float: left;
+    background-image: url(../assets/utube-off.jpg);
+  }
+
+  #youtube a:hover {
+      background-image: url(../assets/utube-on.jpg);
+  }
+}
+
+
+// Main image & logo
+.top-image {
+  max-width: 100%;
+  height: auto;
+  background-image: url(../assets/top-image.png);
+  background-size: 130%;
+  background-position: 0 -135px;
+  background-repeat: no-repeat;
+  border: 10px solid white;
+  position: relative;
+
+  & .top-image:after {
+    content: "";
+    background-image: url(../assets/grid.png);
+    background-repeat: repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.logo {
+  width: 100%;
+  padding: 30px 10px;
+}
+
+
+// Article intros & links
+.topicbox {
+  max-width: 334px;
+  max-height: 350px;
+  margin-top: 30px;
+  background-color: white;
+  text-align: left;
+  line-height: 1.4em;
+  float: left;
+  padding: 10px 30px 20px 30px;
+
+  & a {
+    display: block;
+    font-size: .7em;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color:  rgb(179, 41, 46);
+  }
+
+  & a:hover {
+    color: rgb(255, 203, 57);
+  }
+
+  & h2 {
+    font-weight: 300;
+    font-size: 1.4em;
+    color: #333;
+  }
+
+  & #date {
+    font-weight: 300;
+    font-size: 1em;
+    color: #ccc;
+  }
+
+  & p {
+    font-size: .75em;
+    font-weight: 400;
+    color: #333;
+  }
+}
+
+
+// Skateboard samples area
+.sk8 {
+  clear: both;
+  margin: 0 auto;
+}
+
+.boards {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: white;
+  position: relative;
+
+  & ul {
+      list-style: none;
+  }
+
+  & li {
+      position: absolute;
+      display: inline-block;
+      padding: 10px;
+      float: left;
+  }
+}
+
+
+// Contact info & form
+.contact {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  clear: both;
+  background-color: white;
+  position: relative;
+}
+
+.info {
+    display: block;
+    position: absolute;
+    float: left;
+    padding: 30px 30px;
+    width: 50%;
+
+  & .info h2 {
+    font-weight: 300;
+    font-size: 1.4em;
+    color: #353535;
+  }
+
+  & .info p {
+    font-size: .9em;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #333;
+  }
+
+  & .infosocials {
+  }
+
+  & .infosocials ul li {
+    list-style: none;
+    display: block;
+    float: left;
+    margin-right: 4px;
+  }
+}
+
+.form {
+    display: block;
+    position: absolute;
+    float: right;
+    width: 50%;
+    padding: 30px;
+}
+
+
+// Footer area (currently not needed)
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+}
