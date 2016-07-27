@@ -5814,21 +5814,34 @@ body {
   margin: 0;
   padding: 0; }
 
+h2 {
+  font-family: 'Hind', sans-serif;
+  font-weight: 400; }
+
 h3 {
   font-weight: 300;
   text-transform: uppercase; }
 
-.background {
+ul {
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center; }
+
+li {
+  display: inline;
+  padding: 10px; }
+
+.wrapper {
   width: 100%;
-  height: 1000px;
+  height: auto;
   background-image: url(../assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  z-index: -1;
   margin: 0; }
 
-.background:before {
+.wrapper:before {
   content: "";
   position: absolute;
   top: 0;
@@ -5836,6 +5849,9 @@ h3 {
   right: 0;
   bottom: 0;
   background-color: rgba(10, 10, 10, 0.6); }
+
+.container {
+  max-width: 1000px; }
 
 .main-content {
   max-width: 1044px;
@@ -5848,14 +5864,14 @@ h3 {
 
 .top-image {
   max-width: 100%;
-  height: auto;
+  min-height: 250px;
   background-image: url(../assets/top-image.png);
   background-size: 130%;
   background-position: 0 -135px;
   background-repeat: no-repeat;
   border: 10px solid white;
   position: relative; }
-  .top-image .top-image:after {
+  .top-image :before {
     content: "";
     background-image: url(../assets/grid.png);
     background-repeat: repeat;
@@ -5866,12 +5882,60 @@ h3 {
     position: absolute; }
 
 .logo {
+  position: relative;
   width: 100%;
   padding: 30px 10px; }
 
-footer {
+.topicbox {
+  max-width: 33.33333%;
+  height: 400px;
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+  line-height: 1em; }
+  .topicbox p {
+    font-size: .95em;
+    font-weight: 400;
+    font-family: 'Hind', sans-serif;
+    color: #666;
+    line-height: 1.8em; }
+
+#date {
+  font-size: 1em;
+  font-weight: 300;
+  font-family: 'Hind', sans-serif;
+  color: #999; }
+
+#read-more {
+  font-family: 'Hind', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b4292e;
+  display: block;
+  text-align: center; }
+
+.boards {
+  max-width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+#boardimg {
+  display: inline; }
+
+.contact {
   width: 100%;
-  height: 60px;
-  background-color: black; }
+  height: 450px;
+  background-color: white;
+  padding: 20px; }
+
+.info {
+  float: left; }
+
+.form-sec {
+  float: right; }
 
 /*# sourceMappingURL=main.css.map */
