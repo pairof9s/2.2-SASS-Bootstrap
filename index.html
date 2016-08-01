@@ -5,6 +5,7 @@
     <title>D9 SASS + Bootstrap</title>
     <!-- CSS & SASS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700' rel='stylesheet' type='text/css'>
   </head>
@@ -12,147 +13,170 @@
   <body>
 
     <!-- ** Background image ** -->
-    <div class="wrapper">
+    <div class="container-fluid wrapper">
       <!-- ** Main Content Container ** -->
-      <div class="container">
+      <div class="row col-md-offset-2 col-md-8">
+        <div class="main-content">
 
-        <!-- ** Header Area **-->
-        <div class"row">
-          <!-- ** Social links ** -->
-          <div class="col-md-offset-6 col-md-6">
-            <div class="subscribe">
-              <span class="subtext"><a href="#">subscribe:</a></span>
-            </div>
-            <div class="separator">
-              <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-            <div class="socials">
-              <ul>
-                <li><span id="facebook"><a href="#"></a></span></li>
-                <li><span id="rss"><a href="#"></a></span></li>
-                <li><span id="twitter"><a href="#"></a></span></li>
-                <li><span id="youtube"><a href="#"></a></span></li>
-              </ul>
-            </div>
-          </div>
-          <!-- ** Navigation ** -->
-          <nav>
-            <div>
-                <ul class="nav-box">
-                  <li><a href="#">Sk8t News</a></li>
-                  <li><a href="#">skateboarders</a></li>
-                  <li><a href="#">board design</a></li>
-                  <li><a href="#">contact us</a></li>
-                </ul>
-            </div>
-          </nav>
-          <!-- ** Head Image ** -->
-          <div class="row">
-            <div class="top-image">
-              <div class="logo"><img src="assets/peralta-logo.png" /></div>
-            </div>
-          </div>
-        </div> <!-- ** close Header Area ** -->
-        <!-- ** 3 Content Blocks ** -->
-        <section class="row">
-            <div class="topicbox col-md-8">
-              <h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
-              <p><span id='date'>October 10, 2013</span></p>
-              <p>It was just over 90 degrees in Los Angeles, but that didn't stop the throngs from coming out to celebrate the 10th Annual Tony Hawk's Stand Up For Skateparks Benefit Presented by SLS Hotel &amp; Casino Las Vegas on Saturday at the Green Acre Estate in Beverly Hills.</p>
-              <a href="#" id="read-more">[ read more ]</a>
-            </div>
-            <div class="topicbox col-md-8">
-              <h2>Rodney Mullen: Pop an ollie and innovate!<br>(TED Talk)</h2>
-              <p><span id='date'>March 10, 2013</span></p>
-              <p>The last thing Rodney Mullen, the godfather of street skating, wanted were competitive victories. In this exuberant talk he shares his love of the open skateboarding community and how the unique environments it plays in drive the creation of new tricks -- fostering...</p>
-              <a href="#" id="read-more">[ read more ]</a>
-            </div>
-            <div class="topicbox col-md-8">
-              <h2>Ray Barbee Talks<br>'Ban This'</h2>
-              <p><span id='date'>October 4, 2013</span></p>
-              <p>Since filming is in full swing for the Vans video Adventures with Chris has taken the opportunity to sit some of the team down to look behind the skating of some of the earlier parts. Today we sit down Ray Barbee, one of the smoothest guys to ever step on a skateboard and Chris' childhood idol...</p>
-              <a href="#" id="read-more">[ read more ]</a>
-            </div>
-        </section> <!-- ** close Content Blocks ** -->
-        <!-- ** Skaters Blocks ** -->
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div> <!-- ** close Skaters Blocks ** -->
-        <!-- ** Skateboard Models area ** -->
-        <section class="row">
-          <div class="boards">
-            <ul>
-              <li><span id="boardimg"><img src="assets/sk8-1.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-2.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-3.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-4.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-5.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-6.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-7.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-8.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-9.png" alt="" /></span></li>
-              <li><span id="boardimg"><img src="assets/sk8-10.png" alt="" /></span></li>
-            </ul>
-          </div>
-        </section> <!-- ** close Skateboard Models area ** -->
-        <!-- ** Contact area ** -->
-        <section class="row">
-          <div class="contact">
-            <div class="info col-md-6">
-              <h2>Contact Us for More Information</h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="infosocials">
+          <!-- ** Header Area **-->
+          <section>
+            <!-- ** Social links ** -->
+            <div class="row">
+              <div>
+                <span class="col-md-offset-7 col-md-1 subtext"><a href="#">subscribe:</a></span>
+              </div>
+              <div class="socials">
                 <ul>
-                  <li><img src="assets/fb-gray.jpg" alt="" /><a href="#"></a></li>
-                  <li><img src="assets/rss-gray.jpg" alt="" /><a href="#"></a></li>
-                  <li><img src="assets/twit-gray.jpg" alt="" /><a href="#"></a></li>
-                  <li><img src="assets/utube-gray.jpg" alt="" /><a href="#"></a></li>
+                  <li><span id="facebook"><i class="fa fa-facebook-official fa-fill" aria-hidden="true"></i></span></li>
+                  <li><span id="rss"><i class="fa fa-rss-square" aria-hidden="true"></i></i></span></li>
+                  <li><span id="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></span></li>
+                  <li><span id="youtube"><i class="fa fa-youtube-square" aria-hidden="true"></i></span></li>
                 </ul>
               </div>
             </div>
-            <div class="form-sec col-md-6">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label class="sr-only" for="inputName" class="control-label"></label>
-                  <div>
-                    <input type="name" class="form-control" id="inputName" placeholder="NAME">
-                  </div>
+            <!-- ** Navigation ** -->
+            <div class="row">
+              <div class="main-nav">
+                <div class="col-md-3 nav-box">
+                  <div id="nav-button"><a href="#"> Sk8t News </a></div>
                 </div>
-                <div class="form-group">
-                  <label class="sr-only" for="inputEmail3" class="control-label"></label>
-                  <div>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="EMAIL">
-                  </div>
+                <div class="col-md-3">
+                  <div id="nav-button"><a href="#"> skateboarders </a></div>
                 </div>
-                <div class="form-group">
-                  <label class="sr-only"></label>
-                  <div>
-                    <textarea class="form-control" rows="3" placeholder="YOUR MESSAGE"></textarea>
-                  </div>
+                <div class="col-md-3">
+                  <div id="nav-button"><a href="#"> board design </a></div>
                 </div>
-                <div class="form-group">
-                  <div>
-                    <button type="submit" class="btn btn-danger btn-lg pull-right">SUBMIT</button>
-                  </div>
+                <div class="col-md-3 nav-box">
+                  <div id="nav-button"><a href="#"> contact us </a></div>
                 </div>
-              </form>
+              </div>
             </div>
+            <!-- ** Head Image ** -->
+            <div class="row image-sect">
+              <div class="top-image">
+                <span><img class="logo" src="assets/peralta-logo.png" /></span>
+              </div>
+              <div class="col-md-offset-5 col-md-2">
+               <form class="carousel-buttons">
+                 <input type="radio" checked="checked" name="radio" value="A"></input>
+                 <input type="radio" name="radio" value="B"></input>
+                 <input type="radio" name="radio" value="C"></input>
+               </form>
+             </div>
           </div>
-        </section> <!-- ** close Contact area ** -->
-
+          </section> <!-- ** close Header Area ** -->
+          <!-- ** 3 Content Blocks ** -->
+          <section class="row clearfix">
+            <div class="col-sm-12 col-md-4 post-sect">
+              <div class="topicbox">
+                <span><h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2><span>
+                <p><span id='date'>October 10, 2013</span></p>
+                <p>It was just over 90 degrees in Los Angeles, but that didn't stop the throngs from coming out to celebrate the 10th Annual Tony Hawk's Stand Up For Skateparks Benefit Presented by SLS Hotel &amp; Casino Las Vegas on Saturday at the Green Acre Estate in Beverly Hills.</p>
+                <a href="#" id="read-more">[ read more ]</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 post-sect">
+              <div class="topicbox">
+                <h2>Rodney Mullen: Pop an ollie and innovate!<br>(TED Talk)</h2>
+                <p><span id='date'>March 10, 2013</span></p>
+                <p>The last thing Rodney Mullen, the godfather of street skating, wanted were competitive victories. In this exuberant talk he shares his love of the open skateboarding community and how the unique environments it plays in drive the creation of new tricks -- fostering...</p>
+                <a href="#" id="read-more">[ read more ]</a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 post-sect">
+              <div class="topicbox">
+                <h2>Ray Barbee Talks<br>'Ban This'</h2>
+                <p><span id='date'>October 4, 2013</span></p>
+                <p>Since filming is in full swing for the Vans video Adventures with Chris has taken the opportunity to sit some of the team down to look behind the skating of some of the earlier parts. Today we sit down Ray Barbee, one of the smoothest guys to ever step on a skateboard and Chris' childhood idol...</p>
+                <a href="#" id="read-more">[ read more ]</a>
+              </div>
+            </div>
+          </section> <!-- ** close Content Blocks ** -->
+          <section class="row"><!-- ** Skaters Blocks ** -->
+            <div class="skater-sect">
+              <div class="col-md-6 skater-1">
+                <div class="skater1">
+                  <h1>Lance Mountain</h1>
+                </div>
+              </div>
+              <div class="col-md-6 skater-2">
+                <div class="skater2">
+                  <h1>Rodney Mullen</h1>
+                </div>
+              </div>
+              <div class="row skater-3 col-md-6">
+                <div class="skater3">
+                  <h1>Steve Caballero</h1>
+                </div>
+              </div>
+              <div class="row skater-4 col-md-4">
+                <div class="skater4">
+                  <h1>Tommy Guerrero</h1>
+                </div>
+              </div>
+            </div>
+          </section> <!-- ** close Skaters Blocks ** -->
+          <!-- ** Skateboard Models area ** -->
+          <section class="row">
+            <div class="boards">
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-1.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-2.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-3.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-4.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-5.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-6.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-7.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-8.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-9.png" alt="" /></span>
+              <span id="boardimg"><img class="img-responsive" src="assets/sk8-10.png" alt="" /></span>
+            </div>
+          </section> <!-- ** close Skateboard Models area ** -->
+          <!-- ** Contact area ** -->
+          <section class="row">
+            <div class="contact">
+              <div class="info col-md-6">
+                <h2>Contact Us for More Information</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="row info-socials">
+                    <span id="info-fb"><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></span>
+                    <span id="info-rss"><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></span>
+                    <span id="info-twt"><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></span>
+                    <span id="info-yt"><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></span>
+                </div>
+              </div>
+              <div class="form-sec col-md-6">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="sr-only" for="inputName" class="control-label"></label>
+                    <div>
+                      <input type="name" class="form-control" id="inputName" placeholder="NAME">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="inputEmail3" class="control-label"></label>
+                    <div>
+                      <input type="email" class="form-control" id="inputEmail" placeholder="EMAIL">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only"></label>
+                    <div>
+                      <textarea class="form-control" rows="3" placeholder="YOUR MESSAGE"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div>
+                      <button type="submit" class="btn btn-danger btn-lg pull-right">SUBMIT</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section> <!-- ** close Contact area ** -->
+        </div>
       </div> <!-- ** close Main Container ** -->
-    </div> <!-- ** close background image Wrapper ** -->
-
+    </div> <!-- ** close bkgrd Wrapper ** -->
   </body>
 
 </html>
